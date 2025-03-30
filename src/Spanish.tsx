@@ -18,7 +18,7 @@ timeTablesRaw.forEach((station:relevantFields) => {
 function Spanish() {
     const [filterLetter, setFilterLetter] = useState("");
     const filteredList = cleanTimeTables.filter((item) =>
-        item.nom_normal.toLowerCase().startsWith(filterLetter.toLowerCase())
+        item.nom_normal.toLowerCase().startsWith(filterLetter.toLowerCase()) // con esto comprobamos si lo que esta dentro de la caja de buscar coincide con alguna estacion
     );
     return (
         <div>
